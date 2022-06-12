@@ -14,6 +14,7 @@
 </head>
 
 <body>
+
   <!--header-->
   <header class="header">
     <div class="container header-container">
@@ -50,11 +51,15 @@
         <button class="hero-button" type="button" data-modal-open>Заказать услугу</button>
           <div class="backdrop is-hidden" data-modal>
             <div class="modal">
-              <button class="modal-btn" data-modal-close>
+              <button class="modal-btn" type="button" data-modal-close>
                 <svg class="modal-icon" width="14" height="14">
                   <use href="./images/icons.svg#icon-close-black"></use>
                 </svg>
               </button>
+              <div class="">
+                <h2 class="">Оставьте свои данные, мы вам перезвоним</h2>
+              <button class="modal-btn-send" type="submit">Отправить</button>
+              </div>
             </div>
           </div>
       </div>
@@ -370,7 +375,6 @@
               <svg class="footer-socials-icon" width="20" heidht="20">
                 <use href="./images/icons.svg#icon-instagram"></use>
               </svg>
-  
             </a>
           </li>
           <li class="footer-socials-item">
@@ -378,7 +382,6 @@
               <svg class="footer-socials-icon" width="20" heidht="20">
                 <use href="./images/icons.svg#icon-twitter"></use>
               </svg>
-  
             </a>
           </li>
           <li class="footer-socials-item">
@@ -387,7 +390,6 @@
               <svg class="footer-socials-icon" width="20" heidht="20">
                 <use href="./images/icons.svg#icon-facebook"></use>
               </svg>
-  
             </a>
           </li>
           <li class="footer-socials-item">
@@ -401,7 +403,24 @@
           </li>
         </ul>
       </div>
+      <!--Section subscribe-->
+     <div class="footer-subscribe-container">
+        <p class="footer-subscribe-text">Подпишитесь на рассылку</p>
+        <form class="footer-form" name="footer-form">
+          <label for="user-mail">E-mail</label>
+          <input class="footer-input" type="email" id="" name="footer-form">
+         <button class="footer-btn" type="submit">Подписаться
+           <svg class="footer-send-icon" width="24" heidht="24">
+             <use href="./images/icons.svg#icon-icon-send"></use>
+           </svg>
+         </button>
+
+        </form>
+
+      </div>
     </div>
+
+    
   </footer>
    <script src="./js/modal.js"></script>
 </body>

@@ -14,6 +14,7 @@
   --img-bg-color: rgba(47, 48, 58, 0.8);
   --card-bg-color: rgba(33, 150, 243, 0.9);
   --modal-bg-color: rgba(0, 0, 0, 0.2);
+  --footer-form-color: rgba(255, 255, 255, 0.3);
 
   /*border color*/
   --border-color: #ececec;
@@ -217,13 +218,13 @@ p {
 
 .hero-button {
   padding: 10px 32px;
-  border-radius: 4px;
-  border: none;
-  cursor: pointer;
   font-weight: 700;
   letter-spacing: 0.06em;
   font-size: 16px;
   line-height: 1.9;
+  border-radius: 4px;
+  border: none;
+  cursor: pointer;
   background-color: var(--accent-color);
   color: var(--second-accent-text-color);
   transition: background-color var(--slow-anim) ;
@@ -292,6 +293,22 @@ p {
   border-radius: 50%;
   border: 1px solid rgba(0, 0, 0, 0.1);
   background-color: var(--second-accent-text-color);
+}
+
+.modal-btn-send {
+  width: 200px;
+  height: 50px;
+
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.9;
+  letter-spacing: 0.06em;
+  color: var(--second-accent-text-color);
+  background-color: var(--second-bd-color);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  border: none;
+  cursor: pointer;
 }
 
 /*section description*/
@@ -620,6 +637,57 @@ p {
   width: 20px;
   height: 20px;
 }
+
+/*FOOTER SABSCRIBE BLOK*/
+
+.footer-subscribe-container {
+  margin-left: auto;
+
+}
+.footer-subscribe-text {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    color: var(--second-accent-text-color);
+
+}
+
+.footer-btn {
+  width: 200px;
+  height: 50px;
+  margin-left: 12px;
+  font-size: 16px;
+  line-height: 1.9;
+  letter-spacing: 0.06em;
+  border-radius: 4px;
+  border: none;
+  cursor: pointer;
+  color: var(--second-accent-text-color);
+  background-color: var(--accent-color);
+
+}
+
+.footer-send-icon {
+  align-items: center;
+  justify-content: center;
+  margin-left: 10px;
+  width: 24px;
+  height: 24px;
+  fill: var(--second-accent-text-color);
+}
+
+.footer-input {
+  width: 358px;
+  height: 50px;
+  background-color: var(--main-bg-color);
+  border: 1px solid var(--footer-form-color);
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+}
+
+
 
 /*Portfolio*/
 
