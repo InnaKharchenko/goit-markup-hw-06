@@ -56,10 +56,43 @@
                   <use href="./images/icons.svg#icon-close-black"></use>
                 </svg>
               </button>
-              <div class="">
-                <h2 class="">Оставьте свои данные, мы вам перезвоним</h2>
+              <p class="form-description">Оставьте свои данные, мы вам перезвоним</p>
+              <form class="form" autocomplete="off">
+                <label class="form-lable">
+                  <span class="form-input-liner">Имя</span>
+                  <span class="form-input-container">
+                    <input class="form-input" type="text" name="name" autofocus>
+                    <svg class="form-icon" width="18" height="18">
+                      <use href="./images/icons.svg#icon-modal-ob"></use>
+                    </svg>
+                  </span>
+                </label>
+
+                <label class="form-lable">
+                  <span class="form-input-liner">Телефон</span>
+                  <span class="form-input-container">
+                    <input class="form-input" type="text" name="name" autofocus>
+                    <svg class="form-icon" width="18" height="18">
+                      <use href="./images/icons.svg#icon-modal-pfone"></use>
+                    </svg>
+                  </span>
+                </label>
+
+                <label class="form-lable">
+                  <span class="form-input-liner">Почта</span>
+                  <span class="form-input-container">
+                    <input class="form-input" type="text" name="name" autofocus>
+                    <svg class="form-icon" width="18" height="18">
+                      <use href="./images/icons.svg#icon-modal-mail"></use>
+                    </svg>
+                  </span>
+                </label>
+                
+              
+               
               <button class="modal-btn-send" type="submit">Отправить</button>
-              </div>
+            
+              </form>
             </div>
           </div>
       </div>
@@ -409,7 +442,8 @@
         <form class="footer-form" name="footer-form">
           <label for="user-mail">E-mail</label>
           <input class="footer-input" type="email" id="" name="footer-form">
-         <button class="footer-btn" type="submit">Подписаться
+         <button class="footer-btn" type="submit">
+           <span class="footer-btn-content">Подписаться</span>
            <svg class="footer-send-icon" width="24" heidht="24">
              <use href="./images/icons.svg#icon-icon-send"></use>
            </svg>
