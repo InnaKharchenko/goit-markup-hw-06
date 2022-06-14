@@ -429,48 +429,59 @@ p {
   justify-content: center;
   align-items: center;
   margin-bottom: 30px;
-  
-}
-.visually-hidden {
-    position: absolute;
-    white-space: nowrap;
-    width: 1px;
-    height: 1px;
-    overflow: hidden;
-    border: 0;
-    padding: 0;
-    clip: rect(0 0 0 0);
-    clip-path: inset(50%);
-    margin: -1px;
+  color: var(--text-title-color);
 }
 
-.checkbox-custom {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 16px;
-  height: 15px;
-  border: 1px solid var(--btn-icon-color);
-  border-radius: 2px;
+.checkbox-input {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
   overflow: hidden;
-  margin-right: 8px;
-  transition: border-color var(--slow-anim);
+  
+  }
+  .checkbox-icon {
+      width: 16px;
+      height: 15px;
+      margin-right: 8px;
+      /*fill: var(--second-accent-text-color);*/
+      background-color: var(--second-accent-text-color);
+      border-color: var(--second-accent-text-color);
+      outline: var(--btn-icon-color);
+      transition: fill var(--slow-anim);
+    }
+
+  .form-checkbox:checked .checkbox-icon {
+    fill: var(--accent-color);
+    background-color: var(--accent-color);
+    outline: none;
+  }
+
+  .checkbox-input:hover + .checkbox-icon,
+  .checkbox-input:focus + .checkbox-icon {
+    fill: var(--accent-color);
+    outline: var(--accent-color);
+  }
+
+.checkbox-subscribe {
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: var(--main-text-color);
+  margin-right: 4px;
 }
 
-.form-checkbox:focus-within .checkbox-custom,
-.form-checkbox:hover .checkbox-custom {
-  border-color: var(--accent-color);
-}
+.checkbox-link {
+  color: var(--accent-color);
+  cursor: pointer;
+  text-decoration: underline;
 
-.checkbox-icon {
-  width: 16px;
-  height: 15px;
-  opacity: 0;
-  background-color: var(--accent-color);
-  border-color: var(--accent-color);
-  transition: opacity var(--slow-anim);
 }
-
 
 
 
