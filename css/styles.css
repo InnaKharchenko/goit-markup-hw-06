@@ -313,16 +313,6 @@ p {
   cursor: pointer;
 }
 /*FORM*/
-.form {
-  display: block;
-}
-.form-lable {
-  display: block;
-  margin-bottom: 10px;
-  text-align: left;
-  color: var(--text-title-color)
-}
-
 .form-description {
   display: flex;
   justify-content: center;
@@ -336,15 +326,25 @@ p {
   color: var(--text-title-color);
 }
 
-.form-input-liner {
-    display: block;
-    text-align: left;
-    font-weight: 400;
-    font-size: 12px;
-    line-height: 1.17;
-    letter-spacing: 0.01em;
-    margin-bottom: 5px;
-    color: var(--main-text-color);
+.form {
+  display: block;
+}
+
+.form-lable {
+  display: block;
+  margin-bottom: 10px;
+  text-align: left;
+  color: var(--text-title-color)
+}
+.form-input-outline {
+  display: block;
+  text-align: left;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.01em;
+  margin-bottom: 5px;
+  color: var(--main-text-color);
 }
 
 .form-input-container {
@@ -364,17 +364,11 @@ p {
 }
 
 .form-input:hover,
-.form-input:focus,
-.form-textarea:hover,
-.form-textarea:focus {
+.form-input:focus {
   border: 1px solid var(--accent-color);
   outline: 0;
 }
 
-/*.form-input:hover +*/.form-icon:hover
-/*.form-input:focus +*/.form-icon:focus {
-  fill: var(--accent-color);
-}
 
 .form-icon {
   position: absolute;
@@ -383,8 +377,10 @@ p {
   transform: translateY(-50%);
   fill: currentColor;
   pointer-events: none;
-  transition: color var(--slow-anim);
+  transition: fill var(--slow-anim);
 }
+
+
 
 .form-lable.textarea {
   margin-bottom: 20px;
