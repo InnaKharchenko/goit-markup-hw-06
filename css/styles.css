@@ -318,11 +318,17 @@ p {
   line-height: 1.9;
   letter-spacing: 0.06em;
   color: var(--second-accent-text-color);
-  background-color: var(--second-bd-color);
+  background-color: var(--accent-color);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
   border: none;
   cursor: pointer;
+  transition: background-color var(--slow-anim);
+}
+
+.modal-btn-send:hover,
+.modal-btn-send:focus {
+  background-color: var(--second-bd-color);
 }
 
 /*FORM*/
@@ -377,7 +383,9 @@ p {
 }
 
 .form-input:hover,
-.form-input:focus {
+.form-input:focus,
+.form-textarea:hover,
+.form-textarea:focus {
   border: 1px solid var(--accent-color);
   outline: 0;
 }
@@ -393,7 +401,10 @@ p {
   transition: fill var(--slow-anim);
 }
 
-
+.form-input:focus + .form-icon,
+.form-input:hover + .form-icon {
+  color: var(--accent-color);
+}
 
 .form-lable.textarea {
   margin-bottom: 20px;
