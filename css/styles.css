@@ -25,6 +25,7 @@
   /*icons*/
   --main-icons-color: #afb1b8;
   --bg-icons-color: rgba(255, 255, 255, 0.1);
+  --btn-icon-color: #000000;
 
   /*ANIMATION*/
   --slow-anim: 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -294,13 +295,24 @@ p {
 
   border-radius: 50%;
   border: 1px solid rgba(0, 0, 0, 0.1);
+  color: var(--btn-icon-color);
   background-color: var(--second-accent-text-color);
+  transition: color var(--slow-anim);
+
+}
+
+.modal-btn:hover,
+.modal-btn:focus {
+  color: var(--accent-color);
+
+}
+.modal-icon {
+  fill: currentColor;
 }
 
 .modal-btn-send {
   width: 200px;
   height: 50px;
-
   font-weight: 700;
   font-size: 16px;
   line-height: 1.9;
@@ -312,6 +324,7 @@ p {
   border: none;
   cursor: pointer;
 }
+
 /*FORM*/
 .form-description {
   display: flex;
