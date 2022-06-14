@@ -419,6 +419,7 @@ p {
   border-radius: 4px;
   cursor: pointer;
   transition: border-color var(--slow-anim);
+  resize: none;
 }
 
 /*CHECKBOX*/
@@ -428,70 +429,51 @@ p {
   justify-content: center;
   align-items: center;
   margin-bottom: 30px;
+  
+}
+.visually-hidden {
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    border: 0;
+    padding: 0;
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    margin: -1px;
 }
 
-.checkbox-container {
-  position: relative;
-  display: block;
+.checkbox-custom {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   width: 16px;
   height: 15px;
-  margin-right: 8px;
-  cursor: pointer;
-}
-
-.checkbox {
-  position: absolute;
-  padding: 0;
-  white-space: nowrap;
-  width: 1px;
-  height: 1px;
-  overflow: hidden;
-  border: 0;
-  clip: rect(0 0 0 0);
-  clip-path: inset(50%);
-  margin: -1px;
-}
-.checkbox-icon {
-  position: absolute;
-  top: o;
-  left: o;
-  width: 16px;
-  height: 15px;
-  transform: scale(0.2);
-  opacity: 0;
-  transition: transform var(--slow-anim), opacity var(--slow-anim);
-}
-
-.checkbox:checked + .checkbox-icon {
-  transform: scale(1);
-  opacity: 1;
-}
-.checkbox:checked ~ .checkbox-icon-inactive {
-  border-color: var(--accent-color);
-}
-
-.checkbox-icon-inactive {
-  position: absolute;
-  top: 0;
-  left: 0;
-  display: block;
-  width: 16px;
-  height: 15px;
-  border: 2px solid var(--text-title-color);
+  border: 1px solid var(--btn-icon-color);
   border-radius: 2px;
+  overflow: hidden;
+  margin-right: 8px;
   transition: border-color var(--slow-anim);
 }
 
-.checkbox-label {
-  line-height: 1.7;
-  cursor: pointer;
-  user-select: none;
+.form-checkbox:focus-within .checkbox-custom,
+.form-checkbox:hover .checkbox-custom {
+  border-color: var(--accent-color);
 }
 
-.checkbox-label-link {
-  color: var(--accent-color);
-  text-decoration: underline;
+.checkbox-icon {
+  width: 16px;
+  height: 15px;
+  opacity: 0;
+  background-color: var(--accent-color);
+  border-color: var(--accent-color);
+  transition: opacity var(--slow-anim);
 }
+
+
+
+
 
 /*section description*/
 
